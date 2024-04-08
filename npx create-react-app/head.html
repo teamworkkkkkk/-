@@ -3,29 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopogolik</title>
+    <title>FreeShop</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Shopogolik</h1>
+        <h1>FreeShop</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Головна</a></li>
-                <li><a href="products.html">Товари</a></li>
+                <li><a href="index.html" class="katalog-icon">&#8801;</a></li>
+                <li><a href="products.html">Послуги</a></li>
                 <li><a href="contact.html">Контакти</a></li>
-                <li><a href="chat.html" target="_blank">Чат</a></li> <!-- Додано атрибут target="_blank" для відкриття в новій вкладці -->
+                <li><a href="chat.html" target="_blank">Чат</a></li>
+                <li><a href="profile.html" class="profile-button">&#128100;</a></li>
+                <li>
+                    <form id="searchForm">
+                        <input type="text" id="searchInput" placeholder="Пошук...">
+                        <button type="button" id="searchButton">Пошук</button>
+                    </form>
+                </li>
             </ul>
         </nav>
     </header>
+    <script src="foto.js"></script>
     <main>
-        <section class="banner">
-            <h2>Ласкаво просимо на наш сайт!</h2>
-        </section>
-        <!-- Вміст головної сторінки -->
+        <div class="slider">
+            <img class="slide" src="./img/foto.jpg" alt="Slide 1">
+            <img class="slide" src="./img/foto1.jpg" alt="Slide 2">
+            <img class="slide" src="./img/foto2.jpg" alt="Slide 3">
+            <!-- Додайте потрібну кількість слайдів -->
+            
+            <button class="prev" onclick="prevSlide()">&#8656;</button>
+            <button class="next" onclick="nextSlide()">&#8658;</button>
+        </div>
+        
     </main>
     <footer>
-        <p>© 2024 Shopogolik. Усі права захищені.</p>
+        <p>© 2024 FreeShop. Усі права захищені.</p>
     </footer>
 </body>
 </html>

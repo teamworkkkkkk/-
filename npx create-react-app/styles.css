@@ -5,18 +5,19 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-color: #ffffff;
 }
 
 header {
     background-color: #333;
-    color: #fff;
+    color: #000000;
     padding: 20px;
 }
 
 h1 {
     margin: 0;
     font-size: 32px;
+    color: #d64801;
 }
 
 nav ul {
@@ -31,33 +32,99 @@ nav ul li {
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 10%;
+    background-color: #d64801;
+    color: #ffffff;
+    font-size: 25px;
+    text-decoration: underline;
     font-weight: bold;
-    font-size: 18px;
+    text-align: center;
+    line-height: 50px; /* Вирівнює текст вертикально по центру, відповідає висоті кнопки */
+    margin-left: 60px;
+    text-decoration: none;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
+.katalog-icon {
+    font-size: 40px;
+    background-color: #000000;
+    color: #ff0000;
+}
+
+.profile-button {
+    float: right;
+    margin-right: 20px;
+    border-radius: 100%;
+    font-size: 40px;
+}
+
+
+nav ul li form {
+    margin-left: 850px; 
+}
+
+Input {
+    width: 250px; 
+    height: 30px; 
+    font-size: 20px; 
+}
+
+Button {
+    width: 150px; 
+    height: 35px; 
+    font-size: 20px; 
 }
 
 main {
     padding: 20px;
 }
 
-.banner {
-    background-image: url('banner.jpg');
-    background-size: cover;
-    color: #fff;
-    text-align: center;
-    padding: 100px 0;
+.slider {
+    position: relative;
+    display: flex; /* Задаємо гнучкий контейнер, щоб додати всі слайди в одному рядку */
+    overflow: hidden; /* Приховуємо зайві елементи, що виходять за межі слайдера */
 }
+
+.slide {
+    transform: translate(10%, 10%);
+    height: 400px;
+    flex: 0 0 auto; 
+    width: 80%; 
+    transition: transform 0.5s ease; 
+    text-align: center; 
+}
+.prev, .next {
+    position: absolute; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    line-height: 20px;
+    font-size: 45px;
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 10px; 
+    text-align: center;
+    border: 2px solid #fff; 
+    z-index: 1; 
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
 
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     font-size: 14px;
 }
 
@@ -65,7 +132,7 @@ footer {
 
 .chat-container {
     width: 300px;
-    margin: 50px auto;
+    margin: 70px auto;
     border: 1px solid #ccc;
     padding: 20px;
 }
@@ -84,7 +151,7 @@ footer {
 }
 
 #send-button {
-    width: 60px;
+    width: 40px;
     padding: 5px;
     background-color: #007bff;
     color: #fff;
