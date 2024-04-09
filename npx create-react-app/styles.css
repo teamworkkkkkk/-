@@ -104,7 +104,7 @@ main {
     transform: translateY(-50%); 
     line-height: 20px;
     font-size: 45px;
-    background-color: #ff0000;
+    background-color: #d64801;
     color: #fff;
     padding: 10px 20px;
     cursor: pointer;
@@ -141,48 +141,70 @@ footer {
 
 .kontakts creators {
     text-align: center; /* Вирівнювання тексту по центру */
-    margin: 0 10px;
+    font-size: 16px;
+    margin: 0 55px;
+    width: 200px;
+    text-align: left;
 }
-
+.name {
+    font-size: 25px; 
+}
 .Taras {
-    border-radius: 50%; 
+    border-radius: 40%; 
     width: 200px; 
-    height: 200px; 
+    height: 320px;
     object-fit: cover;
 }
 
 .Artur {
-    border-radius: 50%; 
+    border-radius: 40%; 
     width: 200px; 
-    height: 200px;
+    height: 320px;
     object-fit: cover;
 }
 
 .Artem {
-    border-radius: 50%; 
-    width: 200px;
-    height: 200px;
+    border-radius: 40%; 
+    width: 200px; 
+    height: 320px;
     object-fit: cover;
 }
 
 .Dmytro {
-    border-radius: 50%; 
+    border-radius: 40%; 
     width: 200px; 
-    height: 200px; 
+    height: 320px;
     object-fit: cover;
 }
 
 .Vitali {
-    border-radius: 50%; 
-    width: 200px;
-    height: 200px;
+    border-radius: 40%; 
+    width: 200px; 
+    height: 320px;
     object-fit: cover;
 }
 
+.info-block_list {
+    list-style-type: none;
+    padding: 0;
+}
+
 .info-block_list-item {
-    position: relative;
-    margin-bottom: 4px;
+    margin-bottom: 10px;
     color: #d64801;
+    text-decoration: none;
+}
+
+.info-block_list-item span {
+    font-weight: bold;
+}
+
+.info-block_list-item a {
+    font-size: 14px;
+}
+
+.info-block_list-item a:hover {
+    text-decoration: underline;
 }
 
 /* Стилі для чату */
