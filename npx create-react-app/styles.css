@@ -83,16 +83,19 @@ main {
 .slider {
     position: relative;
     display: flex; /* Задаємо гнучкий контейнер, щоб додати всі слайди в одному рядку */
-    overflow: hidden; /* Приховуємо зайві елементи, що виходять за межі слайдера */
+    justify-content: center; /* Вирівнюємо слайдер по центру горизонтально */
+    align-items: center; /* Вирівнюємо слайдер по центру вертикально */
+    height: 50vh; /* Заповнюємо висоту екрану */
+    overflow: hidden;
 }
 
 .slide {
-    transform: translate(10%, 10%);
     height: 400px;
     flex: 0 0 auto; 
-    width: 80%; 
+    width: 55%; 
     transition: transform 0.5s ease; 
     text-align: center; 
+    margin: 0 auto;
 }
 .prev, .next {
     position: absolute; 
