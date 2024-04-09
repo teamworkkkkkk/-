@@ -79,6 +79,7 @@ Button {
 main {
     padding: 20px;
 }
+/* Стилі слайдів*/
 
 .slider {
     position: relative;
@@ -122,13 +123,66 @@ main {
     right: 0;
 }
 
-
+/* Стилі футера */
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 20px;
     font-size: 14px;
+}
+/* Стилі для контактів */
+
+.kontakts {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.kontakts creators {
+    text-align: center; /* Вирівнювання тексту по центру */
+    margin: 0 10px;
+}
+
+.Taras {
+    border-radius: 50%; 
+    width: 200px; 
+    height: 200px; 
+    object-fit: cover;
+}
+
+.Artur {
+    border-radius: 50%; 
+    width: 200px; 
+    height: 200px;
+    object-fit: cover;
+}
+
+.Artem {
+    border-radius: 50%; 
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.Dmytro {
+    border-radius: 50%; 
+    width: 200px; 
+    height: 200px; 
+    object-fit: cover;
+}
+
+.Vitali {
+    border-radius: 50%; 
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.info-block_list-item {
+    position: relative;
+    margin-bottom: 4px;
+    color: #d64801;
 }
 
 /* Стилі для чату */
