@@ -74,7 +74,7 @@ const Nav = () => {
               className="text-blue-500 hover:underline"
               onClick={handleSignOut}
             >
-              Sign out
+              Реєстрація
             </button>
           </div>
         ) : (
@@ -84,7 +84,7 @@ const Nav = () => {
                 className="text-white bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded"
                 onClick={openModal}
               >
-                Sign in
+                Увійти
               </button>
             </div>
           </>

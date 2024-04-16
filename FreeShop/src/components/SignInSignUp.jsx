@@ -8,7 +8,7 @@ const SignInSignUpModal = ({ isOpen, onClose, onSignIn }) => {
 
   const handleSignIn = () => {
     // Replace with your actual authentication logic here
-    const storedUsername = localStorage.getItem("username");
+    const storedUsername = localStorage.getItem("ім'я користувача");
     const storedPassword = localStorage.getItem("password");
 
     if (username === storedUsername && password === storedPassword) {
@@ -17,14 +17,14 @@ const SignInSignUpModal = ({ isOpen, onClose, onSignIn }) => {
       onSignIn(true); // Inform the parent component about the successful sign-in
       onClose();
     } else {
-      setError("Invalid username or password");
+      setError("Не правильне ім'я користувача або пароль");
     }
   };
 
   const handleSignUp = () => {
     // Replace with your actual sign-up logic here
-    localStorage.setItem("username", username);
-    localStorage.setItem("password", password);
+    localStorage.setItem("ім'я користувача", username);
+    localStorage.setItem("Пароль", password);
     setError("");
     setIsSignIn(true);
   };
@@ -47,18 +47,18 @@ const SignInSignUpModal = ({ isOpen, onClose, onSignIn }) => {
           &times;
         </span>
         <h2 className="text-2xl font-semibold mb-4">
-          {isSignIn ? "Sign In" : "Sign Up"}
+          {isSignIn ? "Увійти" : "Реєстрація"}
         </h2>
         <input
           type="text"
-          placeholder="Username"
+          placeholder="Ім'я користувача"
           className="w-full p-2 border rounded mb-4 text-black"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
         />
         <input
           type="password"
-          placeholder="Password"
+          placeholder="Пароль"
           className="w-full p-2 border rounded mb-4 text-black"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
@@ -69,14 +69,14 @@ const SignInSignUpModal = ({ isOpen, onClose, onSignIn }) => {
             className="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600"
             onClick={handleSignIn}
           >
-            Sign in
+            Увійти
           </button>
         ) : (
           <button
             className="w-full bg-green-500 text-white py-2 rounded hover:bg-green-600"
             onClick={handleSignUp}
           >
-            Sign up
+            Реєстрація
           </button>
         )}
         <p className="text-center mt-4">
@@ -88,7 +88,7 @@ const SignInSignUpModal = ({ isOpen, onClose, onSignIn }) => {
               setIsSignIn(!isSignIn);
             }}
           >
-            {isSignIn ? "Sign Up" : "Sign In"}
+            {isSignIn ? "Реєстрація" : "Увійти"}
           </button>
         </p>
       </div>

@@ -16,23 +16,20 @@ const SpecialOffer = () => {
       </div>
       <div className="flex flex-1 flex-col">
         <h2 className="text-4xl font-palanquin font-bold">
-          <span className="text-coral-red">Special </span>
-          Offer
+          <span className="text-coral-red">Особлива</span>
+          пропозиція
         </h2>
         <p className="mt-4 info-text">
-          Embark on a shopping journey that redefines your experience with
-          unbeatable deals. From premier selections to incredible savings, we
-          offer unparalleled value that sets us apart.
+          Вирушай у подорож по інших магазинах і порівнюй ціни з нами.
+          Ти можеш відфільтрувати товари, які тобі найбільш цікаві і вивести статистику ціни у багатьох магазинах.
         </p>
         <p className="mt-6 info-text">
-          Navigate a realm of possibilities designed to fulfill your unique
-          desires, surpassing the loftiest expectations. Your journey with us is
-          nothing short of exceptional.
+          Тут всі наші пропозиції для тебе. Це розіграші, знижки і ще багато цікавого
         </p>
         <div className="mt-11 flex flex-wrap gap-4">
-          <Button label="Shop now" iconURL={arrowRight} />
+          <Button label="Пропозиції" iconURL={arrowRight} />
           <Button
-            label="Learn more"
+            label="Порівняння ціни"
             backgroundColor="bg-white"
             borderColor="border-slate-gray"
             textColor="text-slate-gray"

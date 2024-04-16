@@ -1,9 +1,7 @@
+
 import {
   facebook,
   instagram,
-  shieldTick,
-  support,
-  truckFast,
   twitter,
 } from "../assets/icons";
 import {
@@ -22,10 +20,10 @@ import {
 } from "../assets/images";
 
 export const navLinks = [
-  { href: "#home", label: "Home" },
-  { href: "#about-us", label: "About Us" },
-  { href: "#products", label: "Products" },
-  { href: "#contact-us", label: "Contact Us" },
+  { href: "#home", label: "Головна" },
+  { href: "#location", label: "Місце знаходження" },
+  { href: "#products", label: "Товари" },
+  { href: "#contact-us", label: "Контакти" },
 ];
 
 export const shoes = [
@@ -72,39 +70,20 @@ export const products = [
   },
 ];
 
-export const services = [
-  {
-    imgURL: truckFast,
-    label: "Free shipping",
-    subtext: "Enjoy seamless shopping with our complimentary shipping service.",
-  },
-  {
-    imgURL: shieldTick,
-    label: "Secure Payment",
-    subtext:
-      "Experience worry-free transactions with our secure payment options.",
-  },
-  {
-    imgURL: support,
-    label: "Love to help you",
-    subtext: "Our dedicated team is here to assist you every step of the way.",
-  },
-];
-
 export const reviews = [
   {
     imgURL: customer1,
-    customerName: "Morich Brown",
+    customerName: "Тарік Вмер",
     rating: 4.5,
     feedback:
-      "The attention to detail and the quality of the product exceeded my expectations. Highly recommended!",
+      "Швидка відповідь. Якість відповідає опису. Швидка доставка",
   },
   {
     imgURL: customer2,
-    customerName: "Lota Mongeskar",
+    customerName: "Диштилятор Лох",
     rating: 4.5,
     feedback:
-      "The product not only met but exceeded my expectations. I'll definitely be a returning customer!",
+      "Гарне ставлення до клієнтів. Товар відповідає фото. Всім рекомендую!!!",
   },
 ];
 
@@ -131,10 +110,18 @@ export const footerLinks = [
     ],
   },
   {
-    title: "Get in touch",
+    title: "Наші контакти",
     links: [
-      { name: "customer@nike.com", link: "mailto:customer@nike.com" },
-      { name: "+92554862354", link: "tel:+92554862354" },
+      { name: "Дмитро Кіспрівський", link: "gmail:dmitrokasprivskij@gmail.com" },
+      { name: "+38(068) 952-89-19", link: "tel:+38(068) 952-89-19" },
+      { name: "Тарас Кіс", link: "gmail:taraskis06@gmail.com" },
+      { name: "+38(067) 175-10-88", link: "tel:+38(067) 175-10-88" },
+      { name: "Кошла Віталій", link: "gmail:elveo2006@gmail.com" },
+      { name: "+38(098) 329-32-53", link: "tel:+38(098) 329-32-53" },
+      { name: "Синюк Артур", link: "gmail:artursyniuk@gmail.com" },
+      { name: "+38(097)641-70-06", link: "tel:+38(097)641-70-06" },
+      { name: "Живчик Артем", link: "gmail:artikzivcik8@gmail.com" },
+      { name: "+38(063) 600-76-95", link: "tel:+38(063) 600-76-95" },
     ],
   },
 ];
