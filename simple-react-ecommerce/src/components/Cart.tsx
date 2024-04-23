@@ -34,7 +34,7 @@ const Cart: FC = () => {
       <div className="bg-[#0000007d] w-full min-h-screen fixed left-0 top-0 z-20 overflow-y-auto">
         {checkout ? (
           <div className="max-w-[400px] w-full min-h-full bg-white absolute right-0 top-0 p-6 font-karla">
-            <h1 className="font-bold text-xl mb-1">Замовити</h1>
+            <h1 className="font-bold text-orange-600 text-xl mb-1">Замовити</h1>
             <p className="leading-4 mb-3">
               Ласкаво просимо до розділу оформлення замовлення. При натисканні кнопки "Підтвердити" ваше замовлення вважається прийнятим.
             </p>
@@ -60,7 +60,7 @@ const Cart: FC = () => {
             data-test="cart-container"
           >
             <div className="flex items-center justify-between">
-              <h3 className="font-semibold text-2xl">Кошик</h3>
+              <h3 className="font-semibold text-orange-600 text-2xl">Кошик</h3>
               <RxCross1
                 className="text-[24px] cursor-pointer hover:opacity-70"
                 onClick={() => dispatch(setCartState(false))}
@@ -73,7 +73,7 @@ const Cart: FC = () => {
               ) : (
                 <div className="flex flex-col justify-center items-center p-4">
                   <img src="/emptyCart.jpg" alt="empty" className="w-40" />
-                  <p className="text-center text-xl my-2">Ваш кошик порожній</p>
+                  <p className="text-center text-4xl my-2">Ваш кошик порожній</p>
                 </div>
               )}
             </div>
@@ -81,13 +81,13 @@ const Cart: FC = () => {
               <>
                 <div className="flex items-center justify-between p-2">
                   <h2 className="font-bold text-2xl">Всього</h2>
-                  <h2 className="font-bold text-2xl">${calculateTotal()}</h2>
+                  <h2 className="font-bold text-2xl">{calculateTotal()}грн</h2>
                 </div>
                 <button
                   type="button"
                   data-test="checkout-btn"
                   onClick={() => setCheckout(true)}
-                  className="w-full text-center text-white bg-blue-500 py-2 my-4 rounded font-bold text-xl hover:bg-blue-700"
+                  className="w-full text-center text-white bg-orange-600 py-2 my-4 rounded font-bold text-xl hover:bg-orange-400"
                 >
                   Замовити
                 </button>

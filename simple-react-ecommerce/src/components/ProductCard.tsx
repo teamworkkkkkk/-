@@ -41,14 +41,14 @@ const ProductCard: FC<Product> = ({
   };
 
   return (
-    <div className="border border-gray-200 font-lato" data-test="product-card">
-      <div className="text-center border-b border-gray-200">
+    <div className="border border-orange-200 font-lato" data-test="product-card">
+      <div className="text-center border-b border-orange-200">
         <Link to={{ pathname: `/product/${id}` }}>
           <img src={thumbnail} alt={title} className="inline-block h-60" />
         </Link>
       </div>
       <div className="px-8 pt-4">
-        <p className="text-gray-500 text-[14px] font-medium">{category}</p>
+        <p className="text-orange-500 text-[14px] font-medium">{category}</p>
         <Link
           className="font-semibold hover:underline"
           to={{ pathname: `/product/${id}` }}
@@ -65,7 +65,7 @@ const ProductCard: FC<Product> = ({
         )}
         <button
           type="button"
-          className="flex items-center space-x-2 hover:bg-blue-500 text-white py-2 px-4 rounded bg-pink-500"
+          className="flex items-center space-x-2 hover:bg-orange-300 text-white py-2 px-4 rounded bg-orange-600"
           onClick={addCart}
           data-test="add-cart-btn"
         >

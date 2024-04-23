@@ -90,10 +90,10 @@ const RatingStar: FC<{ rating: number }> = ({ rating }) => {
   }
 
   return (
-    <div className="flex items-center text-[#ffb21d]">
+    <div className="flex items-center text-[#d64801]">
       {showing}
       {notShowing}
-      <span className="ml-2 text-gray-600 font-semibold">{rating}</span>
+      <span className="ml-2 text-orange-600 font-semibold">{rating}</span>
     </div>
   );
 };

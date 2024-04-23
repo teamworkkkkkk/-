@@ -18,7 +18,7 @@ const data = [
   {
     icon: <TbDiscount2 className="text-4xl" />,
     title: "Знижки",
-    desc: "При замовлення на суму більше 111$",
+    desc: "При замовлення на суму більше 1000 грн",
   },
   {
     icon: <MdSupportAgent className="text-4xl" />,

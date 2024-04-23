@@ -3,7 +3,7 @@ describe("testing the single product page", () => {
     cy.intercept("GET", "http://localhost:3000/products/47").as("product");
     cy.intercept(
       "GET",
-      "https://dummyjson.com/products/category/womens-shoes"
+      "http://localhost:3000/products/category/womens-shoes"
     ).as("similar");
     cy.visit("/product/47");
   });

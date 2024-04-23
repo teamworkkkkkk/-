@@ -6,7 +6,12 @@ const TrendingProducts = () => {
     (state) => state.productReducer.featuredProducts
   );
 
-  return <ProductList title="Популярні продукти" products={featuredProducts} />;
+  return (
+    <div className="text-center">
+      <h2 className="text-5xl text-black-300 font-bold mb-4 font-mono">Популярні продукти</h2>
+      <ProductList title="" products={featuredProducts} />
+    </div>
+  );
 };
 
 export default TrendingProducts;

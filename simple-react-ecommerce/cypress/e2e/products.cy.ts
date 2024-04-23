@@ -1,6 +1,6 @@
 describe("testing the products page", () => {
   beforeEach(() => {
-    cy.intercept("GET", "https://dummyjson.com/products/categories").as(
+    cy.intercept("GET", "http://localhost:3000/products/categories").as(
       "categories"
     );
     cy.intercept("GET", "http://localhost:3000/products?limit=100").as(

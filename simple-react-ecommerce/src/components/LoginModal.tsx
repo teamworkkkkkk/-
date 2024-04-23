@@ -40,7 +40,7 @@ const LoginModal: FC = () => {
                 Це тестовий проект. Будь ласка при вході використовуйте логін: <b>atuny0</b> 
                 пароль: & <b>9uQFF1Lh</b> {" "}
                 <span
-                  className="text-blue-500 cursor-pointer hover:underline"
+                  className="text-orange-600 cursor-pointer hover:underline"
                   onClick={() => setClicked(false)}
                 >
                   Увійти
@@ -51,7 +51,7 @@ const LoginModal: FC = () => {
             <>
               <div className="flex mb-2 space-x-2 justify-center items-center">
                 <FaUnlock />
-                <h3 className="font-bold text-center text-2xl">Увійти</h3>
+                <h3 className="font-bold text-orange-600 text-center text-2xl">Увійти</h3>
                 <FaUnlock />
               </div>
               <form onSubmit={submitForm} className="flex flex-col space-y-3">
@@ -87,7 +87,7 @@ const LoginModal: FC = () => {
               <p className="text-center mt-1">
                 Немає акаунта?{" "}
                 <span
-                  className="text-blue-500 cursor-pointer"
+                  className="text-orange-600 cursor-pointer"
                   onClick={() => setClicked(true)}
                 >
                   Реєстрація

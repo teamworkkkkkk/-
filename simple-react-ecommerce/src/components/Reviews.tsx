@@ -4,64 +4,64 @@ import { ReviewItem } from "../models/ReviewItem";
 
 const reviews: ReviewItem[] = [
   {
-    username: "atuny0",
+    username: "Вася",
     rating: 5,
     review:
-      "The product is nice. I got the delivery on time. I am using it for the last four months. My exprience with this product is very good.",
+      "Цей виріб - просто неймовірний! Він не тільки прекрасно виглядає, але і дуже зручний у використанні. Я задоволений кожним аспектом цього продукту.",
   },
   {
-    username: "hbingley1",
+    username: "Денис",
     rating: 4,
     review:
-      "I am satisfied with the value for money of the product. Everything seems nice but the delivery time seems a bit delayed",
+      "Вражаюча якість і швидка доставка! Вже чотири місяці я користуюся цим виробом, і кожного разу він мене зачаровує своєю надзвичайною функціональністю.",
   },
   {
-    username: "rshawe2",
+    username: "Міша",
     rating: 3,
     review:
-      "I found the product not long lasting. The quality also seemed a bit downgraded. I don't think its value for money.",
+      "Не можу відгукнутися не хвалити цей продукт! Він перевершує всі мої очікування і відмінно справляється зі своєю функцією.",
   },
   {
-    username: "yraigatt3",
+    username: "Роман",
     rating: 4,
     review:
-      "The product is nice. I got the delivery on time. I am using it for the last four months. My exprience with this product is very good.",
+      "Продукт, який змусив мене відчути себе задоволеним клієнтом! Він став невід'ємною частиною мого повсякденного життя, і я не можу уявити свій день без нього.",
   },
   {
-    username: "kmeus4",
+    username: "Галина",
     rating: 3,
     review:
-      "The quality could have been better. I feel like wasting my money. I should have been more careful while buying it.",
+      "Чудова якість і надзвичайна зручність! Цей продукт став моїм найулюбленішим аксесуаром за останні чотири місяці.",
   },
   {
-    username: "dpettegre6",
+    username: "Вероніка",
     rating: 5,
     review:
-      "The product is nice. I got the delivery on time. I am using it for the last four months. My exprience with this product is very good.",
+      "Великолепний виріб! Він дійсно вартує своїх грошей. Його висока якість і зручність перевершують всі мої очікування.",
   },
   {
-    username: "ggude7",
+    username: "Іванна",
     rating: 4,
     review:
-      "I am satisfied with the value for money of the product. Everything seems nice but the delivery time seems a bit delayed",
+      "Не можу нахвалити цей продукт достатньо! Він став невід'ємною частиною мого щоденного життя, і я не можу уявити, як я жив без нього.",
   },
   {
-    username: "nloiterton8",
+    username: "Анастасія",
     rating: 3,
     review:
-      "I found the product not long lasting. The quality also seemed a bit downgraded. I don't think its value for money.",
+      "Відмінний вибір для будь-якого, хто цінує якість і зручність. З задоволенням використовую цей продукт вже протягом чотирьох місяців.",
   },
   {
-    username: "umcgourty9",
+    username: "Стас",
     rating: 4,
     review:
-      "The product is nice. I got the delivery on time. I am using it for the last four months. My exprience with this product is very good.",
+      "Продукт, який змусив мене відчути себе повністю задоволеним клієнтом! Він відмінно виконує свою функцію і став моїм улюбленим аксесуаром.",
   },
   {
-    username: "rhallawellb",
+    username: "Артем",
     rating: 3,
     review:
-      "The quality could have been better. I feel like wasting my money. I should have been more careful while buying it.",
+      "Чудовий виріб з високою якістю і прекрасним дизайном. Якість його виконання просто вражає, і я з радістю рекомендую його всім своїм друзям і знайомим.",
   },
 ];
 
@@ -84,7 +84,7 @@ const Reviews: FC<{ id: number }> = ({ id }) => {
 
   return (
     <div className="px-2">
-      <h1 className="text-2xl font-semibold mb-2">Reviews</h1>
+      <h1 className="text-2xl font-semibold mb-2">Відгуки</h1>
       <div className="space-y-2">
         {items?.map(({ username, rating, review }) => (
           <div key={username} className="leading-4" data-test="review-item">

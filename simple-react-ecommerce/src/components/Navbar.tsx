@@ -9,6 +9,7 @@ import useAuth from "../hooks/useAuth";
 import { FaUser } from "react-icons/fa";
 import CustomPopup from "./CustomPopup";
 
+
 const Navbar: FC = () => {
   const dispatch = useAppDispatch();
   const cartCount = useAppSelector(
@@ -25,23 +26,23 @@ const Navbar: FC = () => {
     <div className="py-4 bg-white top-0 sticky z-10 shadow-lg font-karla">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
-          <Link to="/" className="text-4xl font-bold" data-test="main-logo">
+          <Link to="/" className="text-5xl text-orange-600 font-bold" data-test="main-logo">
             FreeShop
           </Link>
           <div className="lg:flex hidden w-full max-w-[500px]">
             <input
               type="text"
               placeholder="Пошук товару..."
-              className="border-2 border-blue-500 px-6 py-2 w-full"
+              className="border-2 border-orange-600 px-6 py-2 w-full"
             />
-            <div className="bg-blue-500 text-white text-[26px] grid place-items-center px-4">
+            <div className="bg-orange-600 text-white text-[26px] grid place-items-center px-4">
               <BsSearch />
             </div>
           </div>
           <div className="flex gap-4 md:gap-8 items-center">
             <Link
               to="/products"
-              className="text-xl font-bold"
+              className="text-2xl text-orange-600 font-bold"
               data-test="main-products"
             >
               Товари
@@ -49,14 +50,14 @@ const Navbar: FC = () => {
             <div className="flex items-center gap-2">
               {username !== "" ? (
                 <img
-                  src="https://robohash.org/Terry.png?set=set4"
+                  src="https://th.bing.com/th/id/OIP.zkMpT_pzSE9uWU5t1RqQGgHaEK?rs=1&pid=ImgDetMain"
                   alt="avatar"
                   className="w-6"
                 />
               ) : (
-                <FaUser className="text-gray-500 text-2xl" />
+                <FaUser className="text-orange-600 text-3xl font-bold" />
               )}
-              <div className="text-gray-500 text-2xl">
+              <div className="text-orange-600 text-3xl">
                 {username !== "" ? (
                   <CustomPopup />
                 ) : (
@@ -71,7 +72,7 @@ const Navbar: FC = () => {
               </div>
             </div>
             <div
-              className="text-gray-500 text-[32px] relative hover:cursor-pointer hover:opacity-80"
+              className="text-orange-600 text-[42px] relative hover:cursor-pointer hover:opacity-80"
               onClick={showCart}
               data-test="cart-btn"
             >

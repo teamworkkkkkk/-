@@ -44,69 +44,71 @@ const Profile: FC = () => {
 
   return (
     <div className="container mx-auto min-h-[83vh] w-full max-w-5xl">
-      <h1 className="text-4xl p-4 font-bold font-lora">Профіль</h1>
+      <h1 className="text-4xl p-4 text-orange-600 font-bold font-lora">Профіль</h1>
       <div className="font-karla grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-1 p-4">
         <img src={info?.image} alt="pp" className="text-center" />
         <table>
           <tbody>
             <tr>
               <td className="font-bold">Ім'я користувача</td>
-              <td>{info?.username}</td>
+              <td className="text-orange-500">{info?.username}</td>
             </tr>
             <tr>
               <td className="font-bold">Ім'я</td>
-              <td>{info?.firstName}</td>
+              <td className="text-orange-500">{info?.firstName}</td>
             </tr>
             <tr>
               <td className="font-bold">Прізвище</td>
-              <td>{info?.lastName}</td>
+              <td className="text-orange-500">{info?.lastName}</td>
             </tr>
             <tr>
               <td className="font-bold w-32">Дівоче прізвище</td>
-              <td>{info?.maidenName}</td>
+              <td className="text-orange-500">{info?.maidenName}</td>
             </tr>
             <tr>
               <td className="font-bold">Email</td>
-              <td>{info?.email}</td>
+              
+              <td className="text-orange-500">{info?.email}</td>
             </tr>
             <tr>
               <td className="font-bold">Телефон</td>
-              <td>{info?.phone}</td>
+              
+              <td className="text-orange-500">{info?.phone}</td>
             </tr>
             <tr>
               <td className="font-bold">Університет</td>
-              <td>{info?.university}</td>
+              <td className="text-orange-500">{info?.university}</td>
             </tr>
             <tr>
               <td className="font-bold">Рік</td>
-              <td>{info?.age}</td>
+              <td className="text-orange-500">{info?.age}</td>
             </tr>
             <tr>
               <td className="font-bold">Стать</td>
-              <td>{info?.gender}</td>
+              <td className="text-orange-500">{info?.gender}</td>
             </tr>
             <tr>
               <td className="font-bold">Група крові</td>
-              <td>{info?.bloodGroup}</td>
+              <td className="text-orange-500">{info?.bloodGroup}</td>
             </tr>
           </tbody>
         </table>
         <div className="space-y-2">
           <div>
             <h1 className="font-bold">Адреса</h1>
-            <p>{info?.address.address}</p>
-            <p>
+            <p className="text-orange-500">{info?.address.address}</p>
+            <p className="text-orange-500">
               {info?.address.city}, {info?.address.postalCode},{" "}
               {info?.address.state}
             </p>
           </div>
           <div>
             <h1 className="font-bold">Комапнія</h1>
-            <p>{info?.company.name}</p>
-            <p>{info?.company.title}</p>
-            <p>{info?.company.department}</p>
-            <p>{info?.company.address.address}</p>
-            <p>
+            <p className="text-orange-500">{info?.company.name}</p>
+            <p className="text-orange-500">{info?.company.title}</p>
+            <p className="text-orange-500">{info?.company.department}</p>
+            <p className="text-orange-500">{info?.company.address.address}</p>
+            <p className="text-orange-500">
               {info?.company.address.city}, {info?.company.address.postalCode},{" "}
               {info?.company.address.state}
             </p>

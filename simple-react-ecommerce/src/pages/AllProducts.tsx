@@ -25,7 +25,7 @@ const AllProducts: FC = () => {
         });
     };
     const fetchCategories = () => {
-      fetch("https://dummyjson.com/products/categories")
+      fetch("http://localhost:3000/products/categories")
         .then((res) => res.json())
         .then((data) => {
           dispatch(addCategories(data));
@@ -76,13 +76,13 @@ const AllProducts: FC = () => {
     <div className="container mx-auto min-h-[83vh] p-4 font-karla">
       <div className="grid grid-cols-5 gap-1">
         <div className="col-span-1">
-          <h1 className="font-bold mb-2">Каталог</h1>
+          <h1 className="font-bold text-orange-600 mb-2">Каталог</h1>
           <div className="space-y-1">
             {allCategories.map((_category) => (
               <div
                 key={_category}
-                className={`cursor-pointer hover:text-blue-500 ${
-                  _category === category ? "text-blue-500" : ""
+                className={`cursor-pointer hover:text-orange-600 ${
+                  _category === category ? "text-orange-600" : ""
                 }`}
                 onClick={() => {
                   setCategory(_category);

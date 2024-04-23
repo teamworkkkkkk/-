@@ -15,7 +15,7 @@ import { MdFavoriteBorder } from "react-icons/md";
 import { addToWishlist } from "../redux/features/productSlice";
 
 const lorem =
-  "It is important to take care of the patient, to be followed by the patient, but it will happen at such a time that there is a lot of work and pain. For to come to the smallest detail, no one should practice any kind of work unless he derives some benefit from it. Do not be angry with the pain in the reprimand in the pleasure he wants to be a hair from the pain in the hope that there is no breeding. Unless they are blinded by lust, they do not come forth; they are in fault who abandon their duties and soften their hearts, that is, their labors.";
+  "";
 
 const SingleProduct: FC = () => {
   const dispatch = useAppDispatch();
@@ -44,7 +44,7 @@ const SingleProduct: FC = () => {
 
   useEffect(() => {
     const fetchPreferences = (cat: string) => {
-      fetch(`https://dummyjson.com/products/category/${cat}`)
+      fetch(`http://localhost:3000/products/category/${cat}`)
         .then((res) => res.json())
         .then((data) => {
           const _products: Product[] = data.products;
@@ -140,29 +140,29 @@ const SingleProduct: FC = () => {
           <table className="mt-2">
             <tbody>
               <tr>
-                <td className="pr-2 font-bold">Виробник</td>
-                <td>{product?.brand}</td>
+                <td className="pr-2 font-bold text-xg">Виробник</td>
+                <td className="text-orange-600 text-normal font-semibold">{product?.brand}</td>
               </tr>
               <tr>
-                <td className="pr-2 font-bold">Категорія</td>
-                <td>{product?.category}</td>
+                <td className="pr-2 font-bold text-xg">Категорія</td>
+                <td className="text-orange-600 text-normal font-semibold">{product?.category}</td>
               </tr>
               <tr>
-                <td className="pr-2 font-bold">Наявність</td>
-                <td>{product?.stock}</td>
+                <td className="pr-2 font-bold text-xg">Наявність</td>
+                <td className="text-orange-600 text-normal font-semibold">{product?.stock}</td>
               </tr>
             </tbody>
           </table>
           <div className="mt-2">
-            <h2 className="font-bold">Про товар</h2>
-            <p className="leading-5">
+            <h2 className="font-bold text-xg">Про товар</h2>
+            <p className="leading-5  text-xm">
               {product?.description} {lorem}
             </p>
           </div>
           <div className="flex flex-wrap items-center mt-4 mb-2 space-x-2">
             <button
               type="button"
-              className="flex items-center space-x-1 mb-2 hover:bg-pink-700 text-white p-2 rounded bg-pink-500"
+              className="flex items-center space-x-1 mb-2 hover:bg-orange-400 text-white p-2 rounded bg-orange-600"
               onClick={addCart}
             >
               <AiOutlineShoppingCart />
@@ -170,7 +170,7 @@ const SingleProduct: FC = () => {
             </button>
             <button
               type="button"
-              className="flex items-center space-x-1 mb-2 bg-blue-500 text-white p-2 rounded hover:bg-blue-700"
+              className="flex items-center space-x-1 mb-2 bg-red-600 text-white p-2 rounded hover:bg-red-400"
               onClick={buyNow}
             >
               <FaHandHoldingDollar />
@@ -178,7 +178,7 @@ const SingleProduct: FC = () => {
             </button>
             <button
               type="button"
-              className="flex items-center space-x-1 mb-2 bg-yellow-500 text-white p-2 rounded hover:bg-yellow-700"
+              className="flex items-center space-x-1 mb-2 bg-orange-900 text-white p-2 rounded hover:bg-orange-700"
               onClick={addWishlist}
             >
               <MdFavoriteBorder />
