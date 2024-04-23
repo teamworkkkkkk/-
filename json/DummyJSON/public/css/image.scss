@@ -1,9 +1,9 @@
 @import 'https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap';
 @import './mixin/breakpoints.scss';
 
-$primary-color: #eae0d0;
-$secondary-color: #333;
-$link-color: #623721;
+$primary-color: #ff9d00;
+$secondary-color: #ff0000;
+$link-color: #ff5500;
 
 @font-face {
   font-family: 'bitter';
@@ -38,12 +38,15 @@ body {
   bottom: 0px;
 }
 
+
 .arrow {
   width: 40px;
   height: 40px;
   top: 90%;
   margin: -20px 0 0 -20px;
   -webkit-transform: rotate(45deg);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
   border-left: none;
   border-top: none;
   border-right: 2px $primary-color solid;
@@ -101,7 +104,7 @@ header {
       font-size: 48px;
       font-weight: lighter;
       text-transform: lowercase;
-      color: #b68484;
+      color: #ff0000;
     }
 
     @include media('<tablet') {
@@ -277,7 +280,7 @@ header {
   }
 
   img {
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    box-shadow: rgba(255, 0, 0, 0.16) 0px 1px 4px;
   }
 
   &:nth-child(even) {

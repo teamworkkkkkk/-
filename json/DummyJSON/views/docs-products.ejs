@@ -140,7 +140,7 @@ fetch('https://dummyjson.com/products/search?q=phone')
 
           <blockquote>
             <pre class="result hidden">
-              <code class="language-json">
+              <code class="language-json">  
 {
   "products": [
     {
@@ -242,7 +242,7 @@ fetch('https://dummyjson.com/products?limit=10&skip=10&select=title,price')
           <blockquote>
             <pre>
               <code class="language-js">
-fetch('https://dummyjson.com/products/categories')
+fetch('http://localhost:3000/products/categories')
 .then(res => res.json())
 .then(console.log);
             </code>
@@ -257,26 +257,27 @@ fetch('https://dummyjson.com/products/categories')
             <pre class="result hidden">
               <code class="language-json">
 [
-  "smartphones",
-  "laptops",
-  "fragrances",
-  "skincare",
-  "groceries",
-  "home-decoration",
-  "furniture",
-  "tops",
-  "womens-dresses",
-  "womens-shoes",
-  "mens-shirts",
-  "mens-shoes",
-  "mens-watches",
-  "womens-watches",
-  "womens-bags",
-  "womens-jewellery",
-  "sunglasses",
-  "automotive",
-  "motorcycle",
-  "lighting"
+  "Телефон",
+  "Ноутбук",
+  "Парфуми",
+  "Догляд за шкірою",
+  "Продукти",
+  "бакалія",
+  "Прикраса будинку",
+  "меблі",
+  "дзиги",
+  "жіночі сукні",
+  "жіноче взуття",
+  "чоловічі сорочки",
+  "чоловіче взуття",
+  "чоловічі годинники",
+  "жіночі годинники",
+  "жіночі сумки",
+  "Жіночі прикраси",
+  "сонцезахисні окуляри",
+  "автомобілебудування",
+  "мотоцикл",
+  "Освітлення"
 ]
               </code>
             </pre>
@@ -293,7 +294,7 @@ fetch('https://dummyjson.com/products/categories')
           <blockquote>
             <pre>
               <code class="language-js">
-fetch('https://dummyjson.com/products/category/smartphones')
+fetch('http://localhost:3000/products/category/smartphones')
 .then(res => res.json())
 .then(console.log);
             </code>

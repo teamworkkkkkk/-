@@ -30,53 +30,53 @@ utils.loadDataInMemory = async () => {
   const baseDir = path.join(__dirname, '../', 'data');
 
   const productsPath = path.join(baseDir, 'products.json');
-  const cartsPath = path.join(baseDir, 'carts.json');
+  // const cartsPath = path.join(baseDir, 'carts.json');
   const usersPath = path.join(baseDir, 'users.json');
-  const quotesPath = path.join(baseDir, 'quotes.json');
-  const todosPath = path.join(baseDir, 'todos.json');
-  const postsPath = path.join(baseDir, 'posts.json');
-  const commentsPath = path.join(baseDir, 'comments.json');
-  const recipesPath = path.join(baseDir, 'recipes.json');
+  // const quotesPath = path.join(baseDir, 'quotes.json');
+  // const todosPath = path.join(baseDir, 'todos.json');
+  // const postsPath = path.join(baseDir, 'posts.json');
+  // const commentsPath = path.join(baseDir, 'comments.json');
+  // const recipesPath = path.join(baseDir, 'recipes.json');
 
   const paths = [
     fs.readFile(productsPath, 'utf-8'),
-    fs.readFile(cartsPath, 'utf-8'),
+    // fs.readFile(cartsPath, 'utf-8'),
     fs.readFile(usersPath, 'utf-8'),
-    fs.readFile(quotesPath, 'utf-8'),
-    fs.readFile(todosPath, 'utf-8'),
-    fs.readFile(postsPath, 'utf-8'),
-    fs.readFile(commentsPath, 'utf-8'),
-    fs.readFile(recipesPath, 'utf-8'),
+    // fs.readFile(quotesPath, 'utf-8'),
+    // fs.readFile(todosPath, 'utf-8'),
+    // fs.readFile(postsPath, 'utf-8'),
+    // fs.readFile(commentsPath, 'utf-8'),
+    // fs.readFile(recipesPath, 'utf-8'),
   ];
 
   const [
     productsStr,
-    cartsStr,
+    // cartsStr,
     usersStr,
-    quotesStr,
-    todosStr,
-    postsStr,
-    commentsStr,
-    recipesStr,
+    // quotesStr,
+    // todosStr,
+    // postsStr,
+    // commentsStr,
+    // recipesStr,
   ] = await Promise.all(paths);
 
   const productsArr = JSON.parse(productsStr);
-  const cartsArr = JSON.parse(cartsStr);
+  // const cartsArr = JSON.parse(cartsStr);
   const usersArr = JSON.parse(usersStr);
-  const quotesArr = JSON.parse(quotesStr);
-  const recipesArr = JSON.parse(recipesStr);
-  const todosArr = JSON.parse(todosStr);
-  const postsArr = JSON.parse(postsStr);
-  const commentsArr = JSON.parse(commentsStr);
+  // const quotesArr = JSON.parse(quotesStr);
+  // const recipesArr = JSON.parse(recipesStr);
+  // const todosArr = JSON.parse(todosStr);
+  // const postsArr = JSON.parse(postsStr);
+  // const commentsArr = JSON.parse(commentsStr);
 
   data.products = productsArr;
-  data.carts = cartsArr;
+  // data.carts = cartsArr;
   data.users = usersArr;
-  data.quotes = quotesArr;
-  data.recipes = recipesArr;
-  data.todos = todosArr;
-  data.posts = postsArr;
-  data.comments = commentsArr;
+  // data.quotes = quotesArr;
+  // data.recipes = recipesArr;
+  // data.todos = todosArr;
+  // data.posts = postsArr;
+  // data.comments = commentsArr;
 
   utils.deepFreeze(data);
 };
